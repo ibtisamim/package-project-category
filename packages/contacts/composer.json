@@ -1,0 +1,26 @@
+{
+    "name": "drafeef/contacts",
+    "description": "contacts package for contact us , contact person , ...elc",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "require": {
+        "laravel/framework": "^9.2",
+        "php": "^8.0.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "drafeef\\contacts\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "drafeef\\contacts\\providers\\AppServiceProvider",
+                "drafeef\\contacts\\providers\\EventServiceProvider",
+                "drafeef\\contacts\\providers\\RouteServiceProvider"
+
+            ]
+        }
+    }
+}

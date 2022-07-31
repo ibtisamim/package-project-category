@@ -1,0 +1,26 @@
+{
+    "name": "drafeef/categories",
+    "description": "categories package for categories  , sub category , sections ,  ...elc",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "require": {
+        "laravel/framework": "^9.2",
+        "php": "^8.0.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "drafeef\\categories\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "drafeef\\categories\\providers\\AppServiceProvider",
+                "drafeef\\categories\\providers\\EventServiceProvider",
+                "drafeef\\categories\\providers\\RouteServiceProvider"
+
+            ]
+        }
+    }
+}

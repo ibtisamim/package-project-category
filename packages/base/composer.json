@@ -1,0 +1,30 @@
+{
+    "name": "drafeef/base",
+    "description": "Base package",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "require": {
+        "laravel/framework": "^9.2",
+        "php": "^8.0.2",
+        "spatie/laravel-translatable": "^6.0",
+        "laravel/passport": "^10.4",
+        "spatie/laravel-activitylog": "^4.5"
+
+    },
+    "autoload": {
+        "psr-4": {
+            "drafeef\\base\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "drafeef\\base\\providers\\AppServiceProvider",
+                "drafeef\\base\\providers\\EventServiceProvider",
+                "drafeef\\base\\providers\\RouteServiceProvider"
+
+            ]
+        }
+    }
+}
